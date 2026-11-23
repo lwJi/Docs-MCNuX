@@ -21,7 +21,8 @@ Companion notes for MCNuX (`../../repos/MCNuX`). The goal is recall: months late
 Skip background on what is known; spend the words on the gaps. Update both lists as discussions reveal more.
 
 - Known: 3+1 general relativity, basic radiative transfer.
-- Gaps: Monte Carlo transport methods, weak-interaction microphysics.
+- Gaps: Monte Carlo transport methods, weak-interaction microphysics, probability and statistics (distributions, estimator errors).
+- For a gap topic, explain the main idea in plain words before any formula.
 
 ## Style
 
