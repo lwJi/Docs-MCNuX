@@ -29,6 +29,11 @@ Skip background on what is known; spend the words on the gaps. Update both lists
 - Plain declarative sentences in the present tense. No narrative of the discussion itself.
 - State units for every dimensional quantity and every numeric value.
 - Number an equation only if the text refers back to it.
+- Use one term for one quantity or concept. Never use a synonym for a term that is already defined.
+- Keep each sentence to 25 words or fewer, with one idea per sentence.
+- Use the active voice. Make the actor or the quantity the subject.
+- Keep noun clusters to three words or fewer.
+- Keep each paragraph to one topic and six sentences or fewer.
 
 ## Layout
 
