@@ -19,4 +19,13 @@ Start with [[conventions]] for notation and units. Papers are listed in [[refere
 
 ## Docs
 
-None yet. Each area gets a heading here when its first doc lands, with one line per doc: the link and its one-sentence takeaway.
+Each area gets a heading here when its first doc lands, with one line per doc: the link and its one-sentence takeaway.
+
+### interactions
+
+- [[poisson-scatter-count]]: The scatter count along a path is Poisson, with mean and variance $\kappa_s \ell$.
+
+### statistics
+
+- [[sample-mean-error]]: The mean of $N$ independent scatter counts has standard error $\sqrt{\lambda/N}$.
+- [[sample-variance-error]]: The sample variance of $N$ Poisson counts has standard error $\sqrt{(\lambda + 2\lambda^2)/N}$, not the Gaussian $\sqrt{2\lambda^2/N}$.
