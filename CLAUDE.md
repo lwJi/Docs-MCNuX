@@ -5,8 +5,11 @@ Companion notes for MCNuX (`../../repos/MCNuX`). The goal is recall: months late
 ## Workflow
 
 1. The user asks a question about MCNuX and we discuss it until the topic is understood. Read the MCNuX code and specs before making claims about behavior, and say so when the two disagree.
-2. When the user says they are ready, summarize the discussion in the doc template for review.
-3. Write to this repo only after the user approves the summary.
+2. When the user says they are ready, run the `summarize-doc` skill. It drafts the docs in the template for review.
+3. Write to this repo only after the user approves the drafts. The skill's write phase covers the docs, [[README]], [[references]] and the lists below. Load the skill again if its text has left the context.
+4. After any later edit to a doc, run the lint script: `python3 .claude/skills/summarize-doc/scripts/lint_docs.py`.
+
+The rules below define a doc and apply to every edit. The skill holds only the procedure, the template and the lint script.
 
 ## Content rules
 
@@ -42,43 +45,4 @@ Skip background on what is known; spend the words on the gaps. Update both lists
 - Docs live in area folders, created when their first doc lands. The areas are listed in [[README]].
 - File names are kebab-case concept slugs, unique across the repo, with no number prefixes.
 - Every new doc gets one line in [[README]]: its link and its one-sentence takeaway.
-
-## Doc template
-
-```markdown
----
-area: <area folder>
-date: <YYYY-MM-DD>
-verified-against: <MCNuX short commit>
-specs: [<spec codes>]
-builds-on: ["[[conventions]]"]
----
-# <Concept>
-
-> [!question]
-> The question that prompted this doc, in one sentence.
-
-> [!summary]
-> Two to four sentences: what to recall in 30 seconds.
-
-## Setup
-Symbols and assumptions beyond [[conventions]].
-
-## Derivation
-Key steps to the headline result.
-
-## Assumptions and limits
-What is approximated, and where it breaks.
-
-## Why it matters
-What this enables in MCNuX, or what goes wrong without it.
-
-## Pitfalls
-Optional. Convention traps, and what was misunderstood at first.
-
-## In MCNuX
-Optional. Spec ids only, one line each.
-
-## References
-arXiv id and equation number.
-```
+- Every doc follows the template in `.claude/skills/summarize-doc/assets/doc-template.md`, the only copy.
